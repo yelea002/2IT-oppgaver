@@ -4,6 +4,7 @@ let theme = "light"
  
 let points2 = 0
 let points1 = 0
+let points3 = 0
  
 
 if(change){
@@ -24,7 +25,7 @@ if(change){
 
 const points1span = document.getElementById("points1span")
 const points2span = document.getElementById("points2span")
- 
+ const points3span = document.getElementById("points3span")
  
 const plus1 = document.getElementById("plus1")
 const plus2 = document.getElementById("plus2")
@@ -32,6 +33,32 @@ const plus2 = document.getElementById("plus2")
 const minus1 = document.getElementById("minus1")
 const minus2 = document.getElementById("minus2")
  
+
+
+
+ 
+const plus3 = document.getElementById("plus3")
+
+
+
+
+plus3.addEventListener("click", function() {
+points1 = 0
+points1span.textContent = points1
+ 
+})
+
+
+
+plus3.addEventListener("click", function() {
+points2 = 0
+points2span.textContent = points2 
+
+})
+
+
+
+
 plus1.addEventListener("click", function() {
 points1 = points1+1
 points1span.textContent = points1
